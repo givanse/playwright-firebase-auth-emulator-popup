@@ -1,0 +1,19 @@
+{
+  "name": "firebase-auth-emulator-popup-repro",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@10.26.0",
+  "scripts": {
+    "serve": "node serve.mjs",
+    "test": "firebase --project demo-auth-popup emulators:exec --only auth \"playwright test --retries=0 --workers=1\"",
+    "repro": "node scripts/repro.mjs"
+  },
+  "dependencies": {
+    "firebase": "12.14.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.54.2",
+    "firebase-tools": "15.22.3",
+    "playwright": "1.54.2"
+  }
+}

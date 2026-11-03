@@ -1,0 +1,11 @@
+node_modules/
+.playwright-versions/
+test-results/
+playwright-report/
+blob-report/
+repro-snapshots.jsonl
+repro-results.json
+firebase-debug.log
+firestore-debug.log
+ui-debug.log
+.firebase/
